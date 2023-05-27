@@ -6,13 +6,15 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "vercel-build": "prisma generate && prisma migrate deploy && next build",
+        "prisma:generate": "prisma generate"
     },
     "dependencies": {
-        "@clerk/nextjs": "^4.18.5",
+        "@clerk/nextjs": "^4.19.0",
+        "@prisma/client": "^4.14.1",
         "@tanstack/react-query": "^4.29.7",
         "@tanstack/react-query-devtools": "^4.29.7",
-        "autoprefixer": "10.4.14",
         "axios": "^1.4.0",
         "class-variance-authority": "^0.6.0",
         "clsx": "^1.2.1",
@@ -20,7 +22,6 @@
         "eslint-config-next": "13.4.4",
         "lucide-react": "^0.221.0",
         "next": "13.4.4",
-        "postcss": "8.4.23",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "tailwind-merge": "^1.12.0",
@@ -35,6 +36,8 @@
         "@types/node": "20.2.4",
         "@types/react": "18.2.7",
         "@types/react-dom": "18.2.4",
+        "autoprefixer": "10.4.14",
+        "postcss": "8.4.23",
         "prisma": "^4.14.1"
     }
 }
