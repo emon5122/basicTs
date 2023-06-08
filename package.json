@@ -1,18 +1,14 @@
 {
-    "name": "blog",
+    "name": "basic-ts",
     "version": "0.1.0",
     "private": true,
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint",
-        "vercel-build": "prisma generate && prisma migrate deploy && next build",
-        "prisma:generate": "prisma generate"
+        "lint": "next lint"
     },
     "dependencies": {
-        "@clerk/nextjs": "^4.19.0",
-        "@prisma/client": "^4.14.1",
         "@tanstack/react-query": "^4.29.7",
         "@tanstack/react-query-devtools": "^4.29.7",
         "axios": "^1.4.0",
@@ -36,7 +32,6 @@
         "@types/react": "18.2.7",
         "@types/react-dom": "18.2.4",
         "autoprefixer": "10.4.14",
-        "postcss": "8.4.23",
-        "prisma": "^4.14.1"
+        "postcss": "8.4.23"
     }
 }
